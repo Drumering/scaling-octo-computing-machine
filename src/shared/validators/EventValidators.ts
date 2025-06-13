@@ -1,5 +1,5 @@
 export function isValidEvent(object: unknown) {
-    const event = object as Record<string, unknown>
+    const event = object as Record<string, unknown>;
     return (
         typeof event === 'object' &&
         event !== null &&
@@ -7,5 +7,5 @@ export function isValidEvent(object: unknown) {
         typeof event.amount === 'number' &&
         (event.destination === undefined || typeof event.destination === 'string') &&
         (event.origin === undefined || typeof event.origin === 'string')
-    )
+    );
 }

@@ -1,4 +1,4 @@
-import { EventType } from "../../shared/types/EventType";
+import { EventType } from '../../shared/types/EventType';
 
 export interface Event {
     type: EventType
